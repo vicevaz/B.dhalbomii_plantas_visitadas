@@ -1,6 +1,6 @@
 # Rasgos funcionales de las plantas nativas más visitadas por *Bombus dahlbomii* en Chile
 
-🐝🌿🐝 Una aproximación para la selección de especies de flora que favorezcan el hábitat de un polinizador en peligro.🐝🌿🐝
+🐝🌿 Una aproximación para la selección de especies de flora que favorezcan el hábitat de un polinizador en peligro.🌿🐝
 
 Este repositorio contiene el análisis exploratorio y la visualización de datos asociados a las principales plantas nativas visitadas por *Bombus dahlbomii* en Chile.
 
