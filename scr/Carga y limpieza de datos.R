@@ -47,6 +47,7 @@ visitas_por_familia <- poll_bd %>%
   arrange(desc(n_registros))
 
 visitas_por_especie <- poll_bd %>% 
+  filter(!is.na(family_plants)) 
   group_by(scientific_name_plants) %>% 
   summarise(
     n_registros = n(),
@@ -61,3 +62,4 @@ write_csv(rasgos,          "Data/rasgos_clean.csv")
 write_csv(poll_bd,         "Data/pollination_bd.csv")
 write_csv(visitas_por_familia, "Data/visitas_por_familia_bd.csv")
 write_csv(visitas_por_especie, "Data/visitas_por_especie_bd.csv")
+
