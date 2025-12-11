@@ -38,10 +38,11 @@ poll_bd %>% count(scientific_name_animals )
 ## 4 Hacer un resumen por familia y especie de planta
 
 visitas_por_familia <- poll_bd %>% 
-  group_by(family_plants ) %>% 
+  filter(!is.na(family_plants)) %>%   # ← elimina NA aquí
+  group_by(family_plants) %>% 
   summarise(
     n_registros = n(),
-    .groups     = "drop"
+    .groups = "drop"
   ) %>% 
   arrange(desc(n_registros))
 
